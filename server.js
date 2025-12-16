@@ -4,6 +4,7 @@ const cors = require("cors");
 require("dotenv").config();
 const authRoutes = require("./routes/authRoutes");
 const app = express();
+const allowedOrigins =["https://face-login-server.onrender.com","http://localhost:5173"]
 app.use(
   cors({
     origin: function (origin, callback) {
